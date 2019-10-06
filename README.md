@@ -1,6 +1,6 @@
 # Pink
 
-* Сайт: [Pink](https://rhm5.github.io/Pink/)
+* Сайт: [Pink](https://5rhm5.gitlab.io/pink/)
 * Дизайн: [HTML Academy](https://htmlacademy.ru/)
 
 
