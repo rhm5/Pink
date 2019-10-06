@@ -1,0 +1,54 @@
+
+.logo {
+  display: block;
+  left: 0;
+  width: 180px;
+  margin-bottom: 23px;
+  padding-left: 20px;
+  fill: @primaryColor;
+  transition:
+  opacity 0.2s linear,
+  fill 0.2s linear;
+  cursor: pointer;
+  
+  &[href]:hover {
+    fill: @tertiaryColor;
+  }
+  &[href]:active {
+    fill: @primaryColor;
+    opacity: 0.3;
+    }
+  }
+
+.logo__image {
+  display: none;
+  
+  &--mobile {
+    @media @mobile-width-only {
+      display: block;
+    }
+  }
+  &--tablet {
+    @media @tablet-width and (max-width: 979px) {
+      display: block;
+    }
+  }
+  &--desktop {
+    @media @desktop-width {
+      display: block;
+    }
+  }
+}
+
+@media @tablet-width {
+  .logo {
+  margin-bottom: 42px;
+  }
+}
+
+@media @desktop-width {
+  .logo {
+    align-self: flex-end;
+    padding-left: 0;
+  }
+}

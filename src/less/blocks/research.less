@@ -1,0 +1,125 @@
+@media @mobile-width-only {
+  .research {
+    display: none;
+  }
+}
+
+
+
+@media @tablet-width {
+
+  .research {
+    display: block;
+    box-sizing: border-box;
+    padding: 62px 0 20px;
+    margin-bottom: 70px;
+  }
+  
+  .research__content {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+
+    &::before {
+      content: "24";
+      display: block;
+      position: absolute;
+      top: 17px;
+      left: -291px;
+      width: 202px;
+      height: 202px;
+      .font(short; 96px; 166px; 700);
+      color: @tertiaryColor;
+      text-align: center;
+      border: 13px solid @tertiaryColor;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    &::after {
+      .def-pseudo();
+      top: -38px;
+      left: -309px;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 100%;
+    }
+  }
+
+  .research__title {
+    margin-bottom: 9px;
+    padding-right: 130px;
+    .font(short; 30px; 36px; 700);
+    color: @quaternaryColor;
+  }
+
+  .research__description {
+    width: 92%;
+    margin: 0;
+    margin-bottom: 11px;
+    padding-right: 0px;
+    .font(short; 14px; 24px; 400);
+    color: @secondaryColor;
+  }
+
+  .research__link {
+    display: block;
+    .font(short; 14px; 24px; 400);
+    color: @tertiaryColor;
+    text-decoration: underline;
+  }
+}
+
+
+
+@media @desktop-width {
+  
+  .research {
+    margin-bottom: 70px;
+    padding: 97px 0 112px;
+    background: #f2f2f2;
+  }
+
+  .research__wrapper {
+    .container();
+  }
+  
+  .research__content {
+    width: 61%;
+    
+    &::before {
+      top: -25px;
+      left: -344px;
+      width: 253px;
+      height: 253px;
+      .font(short; 120px; 206px; 700);
+      border: 17px solid @tertiaryColor;
+    }
+
+    &::after {
+      top: -94px;
+      left: -366px;
+      width: 298px;
+      height: 345px;
+    }
+  }
+  
+  .research__title {
+    margin-bottom: 24px;
+    .font(shortest; 30px; 30px);
+  }
+
+  .research__description {
+    width: 125%;
+    margin-bottom: 32px;
+    padding-right: 150px;
+    .font(shortest; 18px; 30px);
+  }
+
+  .research__link {
+    .font(shortest; 18px; 30px);
+  }
+}

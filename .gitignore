@@ -1,0 +1,14 @@
+﻿node_modules/
+build/
+psd/
+.publish/
+.DS_Store
+*.ai
+*.log
+*.pdf
+*.rar
+*.zip
+Thumbs.db
+package-lock.json
+src/img/sprite.png
+src/less/sprite.less

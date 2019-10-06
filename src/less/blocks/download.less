@@ -1,0 +1,69 @@
+.download {
+  background: rgba(20, 250, 210, 0.2);
+  color: @primaryColor;
+  text-align: center;
+  min-width: 280px;
+  padding-top: 510px;
+}
+
+.download__slogan {
+  display: none;
+}
+
+.download__btn {
+  width: 100%;
+  margin-bottom: 132px;
+  padding: 12px 35px 13px 35px;
+  color: @primaryColor;
+  border: 3px solid @altBack-2;
+  border-radius: 27px;
+  .font(full; 18px; 1.0; @primaryFF; 700);
+}
+
+.download__list {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.download__item {
+  margin: 52px 18px 22px 18px;
+}
+
+.download__os {
+  padding-bottom: 30px;
+  .font(full; 14px; 24px; @primaryFF; 300);
+}
+
+
+
+@media @tablet-width {
+  .download {
+    width: 300px;
+  }
+
+  .download__slogan {
+    display: block;
+    padding: 0 55px;
+    .font(full; 40px; 1.2; @primaryFF; 300);
+    color: @primaryColor;
+    text-align: center;
+    background-color: transparent;
+  }
+}
+
+
+
+
+@media @desktop-width {
+
+  .download__slogan {
+    margin-bottom: 53px;
+    padding-top: 113px;
+    .font(short; 50px; 1.16; 300);
+  }
+  .download__btn {
+    padding: 12px 32px 13px 32px;
+    .font(short; 21px; 18px; 700);
+  }
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Фотографии</title>
+  <meta name="keywords" content="Фотографии пользователей, обработать и запостить свои фотографии, Pink, получить лайк">
+  <meta name="descriptioniption" content="Выкладывайте все, что накопилось в телефоне">
+  <meta name="author" content="RHM">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="180x180" href="img/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo logo" href="index.html">
+        <svg class="logo__image logo__image--mobile" width="75" height="22">
+          <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+        </svg>
+        <svg class="logo__image logo__image--tablet" width="147" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+        </svg>
+        <svg class="logo__image logo__image--desktop" width="147" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+        </svg>
+      </a>
+
+
+      <nav class="page-header__nav  nav  nav--closed  nav--offjs">
+        <button class="nav__toggle  btn" type="button">Меню</button>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html">Главная</a></li>
+          <li class="nav__item nav__item--active"><a>Фотографии</a></li>
+          <li class="nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <main class="page-main page-main__photo">
+
+    <section class="intro intro--photo">
+      <h1 class="visually-hidden">Приложение PINK для мобильных.</h1>
+      <div class="intro__slogan-wrapper">
+        <p class="intro__slogan intro__slogan--photo">Фотографии пользователей</p>
+      </div>
+    </section>
+
+    <section class="posts">
+      <h2 class="visually-hidden">Посты пользователей</h2>
+      <div class="posts__slogan-wrapper">
+        <p class="posts__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
+      <article class="posts__sample posts__sample--panorama sample">
+        <a class="sample__photo sample__photo--panorama" href="">
+          <h3 class="sample__title">Панорама дня</h3>
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="sample__panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Мост для джампинга">
+          </picture>
+        </a>
+
+        <div class="sample__content sample__content--panorama">
+          <div class="sample__info sample__info--panorama">
+            <div class="sample__author sample__author--panorama">Анна<time class="sample__time" datetime="2018-12-18 18:00"> (5 минут назад)</time>
+            </div>
+            <p class="sample__description sample__description--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="sample__like sample__like--panorama">
+              <button class="sample__like-button" type="button">
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
+              <span class="sample__like-text sample__like-text--panorama">Нравится:<span class="sample__like-count">215</span></span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section class="posts__items">
+        <h2 class="visually-hidden">Посты пользователей</h2>
+        <div class="posts__item">
+          <article class="posts__sample sample">
+            <a class="sample__photo" href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 980px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+
+                <source media="(min-width: 980px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x" alt="Робот">
+              </picture>
+            </a>
+
+            <div class="sample__content">
+              <div class="sample__info">
+                <div class="sample__author">Левон<time class="sample__time" datetime="2018-12-18 18:00"> (5 часов назад)</time>
+                </div>
+                <p class="sample__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="sample__like">
+                  <div class="sample__like">
+                    <button class="sample__like-button" type="button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="sample__like-text">Нравится:<span class="sample__like-count">356</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="posts__item">
+          <article class="posts__sample sample">
+            <a class="sample__photo" href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 980px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+
+                <source media="(min-width: 980px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка">
+              </picture>
+            </a>
+
+            <div class="sample__content">
+              <div class="sample__info">
+                <div class="sample__author">Антон<time class="sample__time" datetime="2018-12-18 18:00"> (12 часов назад)</time>
+                </div>
+                <p class="sample__description">Соседи будут рады</p>
+                <div class="sample__like">
+                  <div class="sample__like">
+                    <button class="sample__like-button" type="button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="sample__like-text">Нравится:<span class="sample__like-count">666</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="posts__item">
+          <article class="posts__sample sample">
+            <a class="sample__photo" href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 980px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+
+                <source media="(min-width: 980px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x" alt="Вид сквозь потолочную конструкцию из металла и стекла">
+              </picture>
+            </a>
+
+            <div class="sample__content">
+              <div class="sample__info">
+                <div class="sample__author">Борис<time class="sample__time" datetime="2018-12-18 18:00"> (20 часов назад)</time>
+                </div>
+                <p class="sample__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="sample__like">
+                  <div class="sample__like">
+                    <button class="sample__like-button" type="button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="sample__like-text">Нравится:<span class="sample__like-count">215</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="posts__item">
+          <article class="posts__sample sample">
+            <a class="sample__photo" href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 980px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+
+                <source media="(min-width: 980px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x" alt="Ярмарка Кубанская бахча">
+              </picture>
+            </a>
+
+            <div class="sample__content">
+              <div class="sample__info sample__info--fair">
+                <div class="sample__author">Сергей<time class="sample__time" datetime="2018-12-18 18:00"> (25 часов назад)</time></div>
+                <p class="sample__description">Самая кубанская в мире!</p>
+                <div class="sample__like">
+                  <div class="sample__like">
+                    <button class="sample__like-button" type="button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="sample__like-text">Нравится:<span class="sample__like-count">4</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="posts__item">
+          <article class="posts__sample sample">
+            <a class="sample__photo" href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 980px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+
+                <source media="(min-width: 980px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x" alt="Вид с гор вниз на долину">
+              </picture>
+            </a>
+
+            <div class="sample__content">
+              <div class="sample__info">
+                <div class="sample__author">Максим<time class="sample__time" datetime="2018-12-18 18:00"> (40 часов назад)</time></div>
+                <p class="sample__description">Где снег то?</p>
+                <div class="sample__like">
+                  <div class="sample__like">
+                    <button class="sample__like-button" type="button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="sample__like-text">Нравится:<span class="sample__like-count">150</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="posts__item">
+          <article class="posts__sample sample">
+            <a class="sample__photo" href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 980px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+
+                <source media="(min-width: 980px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x" alt="Фото крыла летящего самолёта на фоне восхода">
+              </picture>
+            </a>
+
+            <div class="sample__content">
+              <div class="sample__info">
+                <div class="sample__author">Надежда<time class="sample__time" datetime="2018-12-18 18:00"> (45 часов назад)</time></div>
+                <p class="sample__description">Всем GM и взаимные лайки!</p>
+                <div class="sample__like">
+                  <div class="sample__like">
+                    <button class="sample__like-button" type="button">
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="sample__like-text">Нравится:<span class="sample__like-count">2560</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </article>
+      </section>
+    </section>
+
+    <section class="upload">
+      <h2 class="visually-hidden">Обработать и выложить фото</h2>
+      <div class="upload__slogan-wrapper">
+        <p class="upload__slogan">Затмите их всех!</p>
+        <p class="upload__slogan">Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+
+      <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="upload__form-group">
+          <div class="upload__photo">
+            <picture>
+              <source type="image/webp" media="(min-width: 980px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+
+              <source media="(min-width: 980px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x" alt="Ваше фото">
+            </picture>
+          </div>
+
+          <div class="upload__filter filter">
+            <input class="filter__radio filter__radio-1" type="radio" id="crop" name="filter" checked>
+            <input class="filter__radio filter__radio-2" type="radio" id="fill" name="filter">
+            <input class="filter__radio filter__radio-3" type="radio" id="contrast" name="filter">
+
+            <div class="filter__toggles">
+              <label class="filter__toggle" for="crop">
+                <span class="visually-hidden">Обрезка</span>
+                <svg class="filter__icon filter__icon--crop" width="48px" height="48px">
+                  <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
+                </svg>
+              </label>
+
+              <label class="filter__toggle" for="fill">
+                <span class="visually-hidden">Заливка</span>
+                <svg class="filter__icon filter__icon--fill" width="48px" height="43px">
+                  <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
+                </svg>
+              </label>
+
+              <label class="filter__toggle" for="contrast">
+                <span class="visually-hidden">Контраст</span>
+                <svg class="filter__icon filter__icon--contrast" width="32px" height="32px">
+                  <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="filter__sliders">
+              <div class="filter__slider-wrap">
+                <div class="filter__slider filter__slider--crop">
+                  <div class="filter__thumb"></div>
+                </div>
+              </div>
+              <div class="filter__slider-wrap">
+                <div class="filter__slider filter__slider--fill">
+                  <div class="filter__thumb"></div>
+                </div>
+              </div>
+              <div class="filter__slider-wrap">
+                <div class="filter__slider filter__slider--contrast">
+                  <div class="filter__thumb"></div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__btn-wrap">
+              <button class="filter__btn filter__btn--post" type="submit">Запостить</button>
+              <button class="filter__btn filter__btn--cancel" type="reset">Отмена</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+
+
+  <footer class="page-footer page-footer__photo">
+    <div class="page-footer__wrapper page-footer__wrapper--photo">
+      <a class="page-footer__logo" href="index.html">
+        <svg class="page-footer__logo-image page-footer__logo-image--tablet" width="147" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink-blue-tablet"></use>
+        </svg>
+        <svg class="page-footer__logo-image page-footer__logo-image--desktop" width="147" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+        </svg>
+      </a>
+
+      <ul class="page-footer__list social">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
+        <li>
+          <a class="social__btn social__btn--tw" href="#">
+            <span class="visually-hidden">Twitter</span>
+            <svg class="social__icon social__icon--tw" width="18px" height="14px">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="social__btn social__btn--fb" href="#">
+            <span class="visually-hidden">Facebook</span>
+            <svg class="social__icon social__icon--fb" width="9px" height="18px">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="social__btn social__btn--youtube" href="#">
+            <span class="visually-hidden">Youtube</span>
+            <svg class="social__icon social__icon--youtube" width="15px" height="13px">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div class="page-footer__copyright">
+        <p class="page-footer__author">
+          Разработано
+        </p>
+        <a class="page-footer__link" href="https://htmlacademy.ru" target="_blank">
+          <svg class="page-footer__copyright-logo" width="26.943px" height="34.09px">
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeSGVFYxJS5oY61DksVooEzgj_jdE-ItE&callback=initMap" async defer></script>
+</body>
+
+</html>

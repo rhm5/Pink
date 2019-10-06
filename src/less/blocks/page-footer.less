@@ -1,0 +1,146 @@
+@media @mobile-width-only {
+
+  .page-footer--hidden {
+    display: none;
+  }
+}
+
+  .page-footer {
+    padding-top: 39px;
+    background: @altBack-2;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 38px;
+  }
+  
+  .page-footer__logo {
+    width: 147px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    transition:
+      opacity 0.2s linear,
+      fill 0.2s linear;
+
+    &[href]:hover {
+      fill: @tertiaryColor;
+    }
+
+    &[href]:active {
+      fill: @secondaryColor;
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__logo-image--desktop {
+    display: none;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    width: 131px;
+    margin: 0 auto;
+  
+  &-logo {
+    margin-top: 15px;
+    fill: @tertiaryColor;
+
+    &:hover {
+      fill: @secondaryColor;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-footer__author {
+  margin-right: 15px;
+  padding-top: 21px;
+  .font(short; 14px; 18px; 400);
+}
+
+
+
+@media @tablet-width {
+
+  .page-footer {
+    padding-top: 32px;
+  }
+
+  .page-footer__photo {
+    padding-top: 34px;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 19px 0 20px;
+    padding-bottom: 9px;
+
+    &--photo {
+      padding-bottom: 35px;
+    }
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    margin-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 0;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+    padding-top: 1px;
+  }
+}
+
+
+
+@media @desktop-width {
+
+  .page-footer {
+    padding-top: 69px;
+    padding-bottom: 67px;
+    background: @altBack-2;
+
+    &--form {
+      padding-top: 17px;
+    }
+  }
+  
+  .page-footer__wrapper {
+    .container();
+  }
+
+  .page-footer__logo {
+    margin-right: 2px;
+    padding-top: 1px;
+  }
+
+  .page-footer__logo-image {
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+    
+  }
+
+  .page-footer__copyright {
+    width: 154px;
+  }
+
+  .page-footer__author {
+    margin-right: 15px;
+    padding-top: 19px;
+    .font(short; 18px; 18px; 400);
+  }
+}

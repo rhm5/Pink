@@ -1,0 +1,44 @@
+.page-header {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 60px;
+  padding-top: 22px;
+  background-color: @primaryBack;
+
+  &--closed {
+    height: 67px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.page-header__wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+@media @tablet-width {
+  .page-header {
+    padding-top: 27px;
+    
+    &--closed {
+    height: 110px;
+    }
+  }
+}
+
+@media @desktop-width {
+  
+  .page-header {
+    padding-top: 0;
+  }
+  
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    min-width: 960px;
+    padding: 0 10px;
+  }
+}

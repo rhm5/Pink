@@ -1,0 +1,68 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "Проект «pink»",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "browser-sync": "*",
+    "css-mqpacker": "*",
+    "del": "*",
+    "fancy-log": "*",
+    "gulp": "*",
+    "gulp-cache": "*",
+    "gulp-clone": "*",
+    "gulp-csso": "*",
+    "gulp-htmlmin": "*",
+    "gulp-imagemin": "*",
+    "gulp-less": "*",
+    "gulp-newer": "*",
+    "gulp-plumber": "*",
+    "gulp-postcss": "*",
+    "gulp-posthtml": "*",
+    "gulp-rename": "*",
+    "gulp-rigger": "*",
+    "gulp-svgmin": "*",
+    "gulp-svgstore": "*",
+    "gulp-ttf2woff": "*",
+    "gulp-uglify": "*",
+    "gulp-webp": "*",
+    "gulp.spritesmith": "*",
+    "pixel-glass": "*",
+    "posthtml-include": "*",
+    "pump": "*",
+    "run-sequence": "*",
+    "stylelint": "*"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint 'less/**/*.less' --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "less/**/*.{less}"
+  ],
+  "engines": {
+    "node": "8.9.4"
+  },
+  "author": "RHM",
+  "license": "ISC",
+  "dependencies": {
+    "imagemin-jpeg-recompress": "^6.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "*",
+    "npm": "*"
+  }
+}
